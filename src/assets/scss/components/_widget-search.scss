@@ -1,0 +1,31 @@
+.widget_search.home,
+.widget_search.sidebar {
+  .search-form {
+    display: grid;
+    grid-template-columns: 70% 25%;
+    grid-gap: 15px;
+    width: 100%;
+    .screen-reader-text {
+      display: none;
+    }
+    .search-field {
+      border: 1px solid #d9d9d9;
+      outline: none;
+      line-height: 40px;
+      padding: 0 10px;
+      border-radius: 3px;
+      font-size: 12px;
+      width: 100%;
+    }
+    .search-submit {
+      line-height: 40px;
+      font-size: 12px;
+      padding: 0 8px;
+      border-radius: 3px;
+      border: none;
+      background-color: $color-hover;
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+}

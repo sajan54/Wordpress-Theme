@@ -1,0 +1,43 @@
+.breadcrum {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  color: #fff;
+  margin-top: 25px;
+  font-weight: 600;
+  &--overlay {
+    display: inline-flex;
+    color: #111;
+    background-color: #fff;
+    padding: 5px 15px;
+  }
+
+  &__item {
+    display: flex;
+    font-family: inherit;
+    a {
+      text-transform: capitalize;
+      &:hover {
+        color: $color-hover;
+      }
+    }
+    a.active {
+      color: $color-hover;
+    }
+    &:last-child {
+      .breadcrum__divider {
+        display: none;
+      }
+    }
+
+    &--overlay {
+      display: flex;
+      font-weight: 300;
+      font-family: "Roboto", sans-serif;
+    }
+  }
+
+  &__divider {
+    margin: 0 8px;
+  }
+}

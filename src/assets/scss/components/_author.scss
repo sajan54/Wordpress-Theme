@@ -1,0 +1,106 @@
+.post-author {
+  margin: 110px auto 40px;
+  max-width: 780px;
+  border: 1px solid #eaeaea;
+  box-shadow: 2px 2px 10px -2px rgba(0, 0, 0, 0.15),
+    -2px -2px 10px -2px rgba(0, 0, 0, 0.15);
+  &--inline {
+    margin: 40px auto;
+    border-left: 3px solid #f87104;
+  }
+  &--inline2 {
+    margin: 40px auto;
+  }
+
+  &__social-name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  &__inner {
+    position: relative;
+    text-align: center;
+    padding: 75px 65px 32px;
+    &--inline {
+      text-align: left;
+      padding: 30px;
+      position: relative;
+      display: grid;
+      grid-template-columns: 1fr 6fr;
+      grid-gap: 30px;
+    }
+    &--row {
+      padding: 40px;
+    }
+  }
+
+  &__thumbnail {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    top: 0;
+    &--inline {
+      place-self: center;
+      img {
+        height: 110px;
+        width: 110px;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        box-shadow: 2px 2px 10px -2px rgba(0, 0, 0, 0.3),
+          -2px -2px 10px -2px rgba(0, 0, 0, 0.3);
+      }
+    }
+
+    &--inline2 {
+      place-self: center;
+      img {
+        box-shadow: unset;
+      }
+    }
+
+    img {
+      height: 110px;
+      width: 110px;
+      border-radius: 50%;
+      border: 2px solid #fff;
+      box-shadow: 2px 2px 10px -2px rgba(0, 0, 0, 0.3),
+        -2px -2px 10px -2px rgba(0, 0, 0, 0.3);
+    }
+  }
+
+  &__details {
+    font-family: "Lora", sans-serif;
+    &--row {
+      margin-top: 20px;
+    }
+  }
+
+  &__about {
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 3px;
+  }
+
+  &__name {
+    font-family: "Montserrat", sans-serif;
+    font-size: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000;
+    margin-bottom: 15px;
+    &--inline2 {
+      margin-bottom: 0;
+    }
+  }
+
+  &__desc {
+    margin-bottom: 20px;
+    font-size: 15px;
+    color: #777;
+  }
+
+  //   &__social {
+  //   }
+}

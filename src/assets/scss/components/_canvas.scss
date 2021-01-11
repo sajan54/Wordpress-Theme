@@ -1,0 +1,35 @@
+.canvas {
+  position: fixed;
+  padding: 15px;
+  background: #fff;
+  z-index: 1011;
+  transform: translateX(350px);
+  transition: transform 500ms;
+  top: 0;
+  right: 0;
+  width: 340px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100%;
+
+  &--open {
+    transform: translateX(0);
+    transition: transform 500ms;
+  }
+
+  &__close {
+    display: flex;
+    justify-content: flex-end;
+    cursor: pointer;
+
+    .fas {
+      font-size: 18px;
+    }
+  }
+
+  &__body {
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+  }
+}

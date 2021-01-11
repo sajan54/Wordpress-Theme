@@ -1,0 +1,47 @@
+.widget_tag_cloud.home,
+.widget_tag_cloud.sidebar {
+  .tagcloud {
+    display: flex;
+    flex-wrap: wrap;
+
+    a {
+      position: relative;
+      font-size: 14px !important;
+      display: inline-block;
+      flex-grow: 1;
+      padding: 8px 12px;
+      margin: 3px;
+      background: transparent;
+      border: 1px solid #eaeaea;
+      text-transform: capitalize;
+      border-left: 2px solid $color-hover;
+      transition: all 300ms;
+
+      &::before {
+        height: 100%;
+        display: block;
+        position: absolute;
+        left: 0;
+        width: 0;
+        top: 0;
+        z-index: -1;
+        content: "";
+        background-color: $color-hover;
+        transition: width 500ms;
+      }
+
+      &:hover {
+        border-color: $color-hover;
+        color: #fff;
+      }
+
+      &:hover::before {
+        width: 100%;
+      }
+
+      span {
+        padding-left: 6px;
+      }
+    }
+  }
+}

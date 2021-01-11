@@ -1,0 +1,117 @@
+.comment-list {
+  margin-top: 40px;
+}
+ol.post-comments {
+  .comment-body {
+    padding-bottom: 25px;
+    border-bottom: 1px solid #d9d9d9;
+  }
+}
+
+.comment-meta {
+  margin-bottom: 15px;
+}
+
+.comment-author {
+  img {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  b.fn {
+    font-family: "Poppins", sans-serif;
+    text-transform: uppercase;
+    font-size: 14px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    margin-bottom: 4px;
+  }
+  span.says {
+    display: none;
+  }
+}
+
+.comment-metadata {
+  margin-top: -13px;
+  time {
+    margin-left: 68px;
+    font-size: 13px;
+    color: #999;
+    font-family: "Lora", sans-serif;
+  }
+}
+
+.comment-content {
+  font-size: 15px;
+  letter-spacing: 0.5px;
+  line-height: 25px;
+  text-transform: none;
+  color: #111111;
+  font-family: "Lora", sans-serif;
+  @media (min-width: 768px) {
+    margin-left: 68px;
+  }
+}
+
+.reply {
+  @media (min-width: 768px) {
+    margin-left: 68px;
+  }
+  margin-top: 12px;
+  a {
+    font-size: 12px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #f6836c;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+  }
+}
+
+.comment-awaiting-moderation {
+  font-size: 12px;
+  margin-top: 8px;
+  display: block;
+  @media (min-width: 768px) {
+    margin-left: 68px;
+  }
+}
+
+ol.children {
+  @media (min-width: 768px) {
+    margin-left: 68px;
+  }
+}
+
+.comment-reply-title {
+  overflow: hidden;
+  text-align: center;
+  h5 {
+    display: inline-block;
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #121212;
+    font-weight: 600;
+    position: relative;
+    padding-left: 25px;
+    padding-right: 25px;
+    &::after,
+    &::before {
+      content: "";
+      position: absolute;
+      height: 1px;
+      width: 200%;
+      background-color: #121212;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    &::before {
+      left: 100%;
+    }
+    &::after {
+      right: 100%;
+    }
+  }
+}

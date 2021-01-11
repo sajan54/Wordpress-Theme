@@ -1,0 +1,16 @@
+.widget_text.home {
+  .textwidget {
+    p {
+      font-size: 14px;
+      line-height: 1.7;
+      text-align: justify;
+
+      &:first-letter {
+        font-size: 45px;
+        float: left;
+        line-height: 1;
+        font-family: serif;
+      }
+    }
+  }
+}

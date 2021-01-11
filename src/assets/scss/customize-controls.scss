@@ -1,0 +1,184 @@
+// Toggle Switch
+.customize-control-checkbox label{
+	margin-left: 0;
+	padding-top: 0;
+	padding-bottom: 0;
+	line-height: 28px;
+}
+
+.onoffswitch_label{
+	display: inline-block;
+    vertical-align: top;
+    margin-top: -1px;
+    width: 200px;
+}
+
+.onoffswitch {
+	position: relative;
+	width: 40px;
+	display: inline-block;
+	float: right;
+	-webkit-user-select:none;
+	-moz-user-select:none;
+	-ms-user-select: none;
+}
+
+.onoffswitch-checkbox {
+	display: none!important;
+}
+
+.onoffswitch-label {
+	display: block;
+	overflow: hidden;
+	cursor: pointer;
+	height: 18px;
+	padding: 0;
+	line-height: 18px;
+	border: 2px solid #9E9E9E;
+	border-radius: 18px;
+	background-color: #9E9E9E;
+	transition: background-color 0.2s ease-in;
+}
+
+.onoffswitch-label:before {
+	content: "";
+	display: block;
+	width: 18px;
+	margin: 0;
+	background: #EBEBEB;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 20px;
+	border: 2px solid #9E9E9E;
+	border-radius: 18px;
+	transition: all 0.2s ease-in 0s;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+	background-color: #42A5F5;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label,
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+	border-color: #42A5F5;
+}
+
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+	right: 0;
+}
+
+// Text Radio Button
+
+._themename_text_radio_button_container ._themename_text_radio_button_span {
+	display: inline-block;
+	margin: 2px;
+	padding: 10px;
+	width: 39.5%;
+	height: 15px;
+	text-align: center;
+	font-size: 14px;
+	background-color: #fff;
+	border-radius: 5px;
+}
+._themename_text_radio_button_container ._themename_text_radio_button_selected {
+	background-color: #2296C9;
+	color: #fff;
+}
+
+// Google Fonts
+.font_attributes_container{
+	background-color: #fff; 
+	padding: 10px;
+}
+.font_attributes_container div{
+	margin: 4px 0 8px 0;
+}
+
+// Image Radio Button
+.image_radio_button-container .image_radio_button-img-img {
+    cursor: pointer;
+}
+
+.image_radio_button-img-selected{
+    border:2px solid #0173AA;
+}
+
+// Range Control
+
+input[type=range] {
+	width: 100%;
+}
+div.cs-range-value{
+    float: right;
+    border: 1px solid #005CC8;
+    background: #005CC8;
+    padding: 3px 10px;
+    border-radius: 10px;
+    color: #fff;
+}
+a.cs-range-default{
+	float: right;
+	padding: 4px 5px;
+	outline:none;
+}
+
+// Accordion
+
+.accordion{
+	margin-bottom: 10px;
+}
+
+.accordion label {
+	display:block;
+	background-color: #eeeeee;
+	font-size: 12px;
+	line-height: 2.5;
+	color: #424242;
+	cursor: pointer;
+	border-bottom: 1px solid #bdbdbd;
+	border-top: 1px solid #ffffff;
+}
+.accordion div {
+	color: #424242;
+	padding: 10px;
+	font-size: 0.8em;
+	line-height: 1.7em;
+	opacity: 0;
+	display: none;
+	text-align: left;
+	background-color: #fff;
+	margin: 0px;
+}
+#tm:checked ~ .hiddentext {
+	display: block;
+	opacity: 1;
+}
+input#tm {
+	display: none;
+	position: relative;
+}
+#tn:checked ~ .hiddentext {
+	display: block;
+	opacity: 1;
+}
+input#tn {
+	display: none;
+	position: relative;
+}
+#to:checked ~ .hiddentext {
+	display: block;
+	opacity: 1;
+}
+input#to {
+	display: none;
+	position: relative;
+}
+#tp:checked ~ .hiddentext {
+	display: block;
+	opacity: 1;
+}
+input#tp {
+	display: none;
+	position: relative;
+}

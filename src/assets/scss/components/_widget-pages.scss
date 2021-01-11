@@ -1,0 +1,34 @@
+.widget_pages.home {
+  overflow: visible;
+  text-transform: uppercase;
+  font-size: 14px;
+
+  ul {
+    justify-content: center;
+  }
+}
+
+.widget_pages.sidebar {
+  ul {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    li {
+      font-size: 13px;
+      font-family: "Montserrat", sans-serif;
+      line-height: unset;
+      text-transform: uppercase;
+      ul.children {
+        position: relative;
+        background: transparent;
+        border: 0;
+        box-shadow: none;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 10px;
+        display: block;
+      }
+    }
+  }
+}

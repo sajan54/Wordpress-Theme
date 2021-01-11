@@ -1,0 +1,134 @@
+.recent-post,
+.popular-post {
+  &--sidebar-default,
+  &--home,
+  &--footer-default {
+    margin-bottom: 50px;
+
+    ul {
+      width: 100%;
+      margin: 0 auto;
+
+      li {
+        margin: 12px 0;
+        display: flex;
+
+        .image {
+          width: 100px;
+
+          img {
+            height: 80px;
+            width: 95px;
+          }
+
+          &--leaf {
+            img {
+              border-top-right-radius: 30%;
+              border-bottom-left-radius: 30%;
+            }
+          }
+
+          &--circle {
+            img {
+              border-radius: 50%;
+              height: 90px;
+              width: 90px;
+            }
+          }
+
+          &--round {
+            img {
+              border-radius: 10px;
+            }
+          }
+        }
+
+        .text {
+          margin-left: 15px;
+        }
+
+        a {
+          display: block;
+          font-size: 14px;
+          font-family: "Raleway", sans-serif;
+          letter-spacing: 1px;
+          font-weight: 500;
+          text-align: left;
+          display: -webkit-box;
+          -webkit-line-clamp: 2;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-transform: uppercase;
+        }
+
+        span {
+          display: block;
+          color: rgba(0, 0, 0, 0.8);
+          opacity: 0.6;
+          font-size: 11px;
+          text-transform: uppercase;
+          font-family: "Roboto", sans-serif;
+          text-align: left;
+          margin-top: 6px;
+        }
+      }
+    }
+  }
+}
+
+.popular-post--home {
+  width: 100%;
+  margin: 30px 15px;
+
+  @media (min-width: 481px) {
+    width: 360px;
+    margin: 30px auto;
+  }
+
+  @media (min-width: 768px) {
+    width: 720px;
+  }
+
+  @media (min-width: 1024px) {
+    width: 940px;
+  }
+
+  @media (min-width: 1200px) {
+    width: 1170px;
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    li {
+      width: 100%;
+
+      @media (min-width: 768px) {
+        width: 50%;
+        padding: 0 8px;
+      }
+
+      @media (min-width: 1200px) {
+        width: 25%;
+      }
+    }
+  }
+}
+
+.popular-post--footer-default {
+  margin-bottom: 0;
+  text-align: left;
+
+  ul {
+    li {
+      a {
+        color: #fff;
+      }
+      span {
+        color: rgba(255, 255, 255, 0.8);
+      }
+    }
+  }
+}

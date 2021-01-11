@@ -1,0 +1,46 @@
+.widget_recent_comments.home,
+.widget_recent_comments.sidebar {
+  ul {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    font-family: "Montserrat", sans-serif;
+
+    li {
+      font-size: 14px;
+      margin: 8px;
+      text-align: center;
+
+      span {
+        a.url {
+          color: #1890ff;
+          text-transform: uppercase;
+          font-weight: 600;
+          opacity: 1;
+
+          &:hover {
+            color: #40afff;
+          }
+        }
+      }
+
+      a {
+        color: rgba(0, 0, 0, 0.8);
+        opacity: 0.6;
+        transition: opacity 300ms;
+
+        &:hover {
+          color: #000;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+.widget_recent_comments.home {
+  ul {
+    @media (min-width: 768px) {
+      max-width: 380px;
+    }
+  }
+}

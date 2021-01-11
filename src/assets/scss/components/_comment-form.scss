@@ -1,0 +1,111 @@
+.comment-respond {
+  margin-top: 25px;
+}
+
+.comment-reply-title {
+  margin-bottom: 15px;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 1px;
+  color: #888;
+  font-weight: 400;
+}
+
+form {
+  input {
+    width: 100%;
+    padding: 13px;
+    font-size: 13px;
+    margin-bottom: 0;
+    border: 1px solid #e3e3e3;
+    outline: none;
+    border-radius: 2px;
+    text-indent: 10px;
+    &::placeholder {
+      font-size: 13px;
+      text-transform: uppercase;
+      font-family: "Montserrat", sans-serif;
+      color: #999;
+    }
+  }
+  p.comment-notes {
+    padding-bottom: 10px;
+    font-size: 13px;
+    font-family: "Lora", sans-serif;
+  }
+  p.comment-form-comment {
+    margin-bottom: 30px;
+    textarea {
+      width: 100%;
+      font-size: 15px;
+      padding: 18px;
+      font-size: 13px;
+      color: #777;
+      height: 220px;
+      line-height: 28px;
+      border: 1px solid #e3e3e3;
+      outline: none;
+      overflow: auto;
+      vertical-align: top;
+      border-radius: 2px;
+    }
+  }
+  p.comment-form-author {
+    margin-bottom: 30px;
+    label {
+      display: none;
+    }
+  }
+
+  p.comment-form-email {
+    width: 48%;
+    margin-right: 4%;
+    float: left;
+    margin-bottom: 30px;
+    label {
+      display: none;
+    }
+  }
+
+  p.comment-form-url {
+    width: 48%;
+    float: left;
+    margin-bottom: 30px;
+    label {
+      display: none;
+    }
+  }
+  p.comment-form-cookies-consent {
+    margin-bottom: 30px;
+    display: block;
+    input {
+      width: auto;
+    }
+    label {
+      font-family: "Montserrat", sans-serif;
+      font-size: 13px;
+      color: #999;
+      font-weight: 400;
+      margin-left: 10px;
+    }
+  }
+  p.form-submit {
+    input {
+      background-color: #dab768;
+      color: #ffffff;
+      border-color: #dab768;
+      padding: 13px 21px 13px 22px;
+      width: auto;
+      font-size: 12px;
+      border: 1px solid;
+      font-weight: 600;
+      border-radius: 0;
+      font-family: "Montserrat", sans-serif;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+}

@@ -1,0 +1,148 @@
+.card-list {
+  width: 100%;
+  margin: 0 25px 25px 25px;
+
+  @media (min-width: 768px) {
+    margin: auto auto 25px auto;
+    margin-top: 0;
+  }
+}
+
+.card-list.card-type-grid {
+  .grid-2 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+
+    @media (min-width: 576px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+  .grid-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+
+    @media (min-width: 576px) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    @media (min-width: 1024px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}
+
+.card-list.with-sidebar {
+  @media (min-width: 1024px) {
+    width: calc(100% - 350px);
+    margin-left: 0;
+  }
+  .grid.grid-3 {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+
+    @media (min-width: 576px) {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+}
+
+.card-list.first-full-width.with-sidebar {
+  .full-width {
+    .card-full-width {
+      &__image {
+        &--paradise {
+          height: 400px;
+        }
+        &--text {
+          height: 400px;
+          @media (min-width: 1200px) {
+            height: 450px;
+          }
+        }
+        &--block {
+          height: 420px;
+        }
+      }
+
+      &__content {
+        &--text {
+          width: 280px;
+          height: 280px;
+          @media (min-width: 1200px) {
+            width: 320px;
+            height: 320px;
+          }
+        }
+      }
+
+      &__desc {
+        -webkit-line-clamp: 2;
+      }
+    }
+  }
+}
+
+.card-list.card-type-grid .card-wrapper.masonry {
+  @media (min-width: 576px) {
+    grid-gap: 0;
+    grid-row-gap: 30px;
+    margin-top: -30px;
+  }
+  @media (min-width: 768px) {
+    article {
+      margin: 0 15px;
+      figure {
+        img {
+          height: 285px;
+        }
+      }
+      &:nth-child(1) {
+        grid-row: 2/6;
+        figure {
+          img {
+            height: 200px;
+          }
+        }
+        .details-masonry {
+          padding: 15px;
+        }
+      }
+      &:nth-child(2) {
+        grid-row: 2/8;
+        figure {
+          img {
+            height: 400px;
+          }
+        }
+      }
+      &:nth-child(3) {
+        grid-row: 6/11;
+      }
+      &:nth-child(4) {
+        grid-row: 8/12;
+        figure {
+          img {
+            height: 200px;
+          }
+        }
+        .details-masonry {
+          padding: 15px;
+        }
+      }
+      &:nth-child(5) {
+        grid-row: 11/18;
+        figure {
+          img {
+            height: 400px;
+          }
+        }
+      }
+      &:nth-child(6) {
+        grid-row: 12/18;
+      }
+    }
+  }
+}

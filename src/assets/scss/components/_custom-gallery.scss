@@ -1,0 +1,46 @@
+.gallery--home {
+  margin: 30px 25px;
+  text-align: center;
+}
+
+.gallery {
+  &__grid {
+    &:hover {
+      img {
+        filter: grayscale(1);
+      }
+    }
+    &__item {
+      width: 100%;
+      margin-bottom: 3px;
+      transition: transform 300ms;
+      @media (min-width: 481px) {
+        width: calc(50% - 3px);
+      }
+
+      @media (min-width: 1024px) {
+        width: calc(25% - 3px);
+      }
+
+      a {
+        display: block;
+        overflow: hidden;
+      }
+
+      img {
+        transition: transform 300ms;
+        width: 100%;
+      }
+
+      &:hover {
+        img {
+          transform: scale(1.05);
+          filter: grayscale(0);
+        }
+      }
+    }
+    &__sizer {
+      width: 25%;
+    }
+  }
+}

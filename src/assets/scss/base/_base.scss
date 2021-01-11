@@ -1,0 +1,92 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  background-color: #ffffff;
+  position: relative;
+  scroll-behavior: smooth;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+
+main {
+  position: relative;
+  min-height: 100vh;
+  background-color: #fff;
+}
+
+figure {
+  margin: 0;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+  color: inherit;
+
+  &:hover {
+    color: inherit;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+li {
+  list-style-type: none;
+}
+
+img {
+  object-fit: cover;
+  vertical-align: middle;
+  border-style: none;
+}
+
+@media only screen and (min-width: 1440px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  html {
+    font-size: 5px;
+  }
+}

@@ -1,0 +1,10 @@
+.widget_media_image.home {
+  a {
+    img {
+      object-fit: cover;
+      object-position: center;
+      height: 150px !important;
+      width: 100%;
+    }
+  }
+}

@@ -1,0 +1,135 @@
+.menu-hamburger {
+  display: none;
+  position: fixed;
+  transform: translateX(-340px);
+  height: 100%;
+  border: 1px solid $color-border;
+  transition: transform 500ms;
+  top: 0;
+  left: 0;
+  z-index: 1011;
+  background-color: #fff;
+  padding: 25px;
+  width: 340px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  background-color: #fff;
+
+  &--open {
+    transform: translateX(-1px);
+    box-shadow: 0 0 50px rgba(70, 70, 70, 0.15);
+  }
+
+  &--collapsed {
+    display: block;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0 20px;
+  }
+
+  &__content {
+    .navigation {
+      display: block;
+      font-size: 16px;
+      text-transform: uppercase;
+      .menu {
+        flex-direction: column;
+
+        .menu-item {
+          padding: 0;
+          &:not(:last-child) {
+            border-bottom: 1px solid $color-border;
+          }
+        }
+        .menu-item-has-children {
+          &:hover {
+            .sub-menu {
+              display: none;
+            }
+          }
+          a {
+            display: inline-block;
+          }
+          span {
+            float: right;
+            cursor: pointer;
+            padding: 10px;
+            font-family: "FontAwesome";
+            font-size: 16px;
+            background-color: $color-hover;
+
+            &::after {
+              content: "\f107";
+              transition: transform 300ms;
+              display: inline-block;
+              transform: rotate(0deg);
+              color: #fff;
+            }
+          }
+          span.open-menu {
+            &::after {
+              transform: rotate(180deg);
+            }
+          }
+          span.open-menu + .sub-menu {
+            display: block;
+            position: relative;
+            border: none;
+            box-shadow: none;
+          }
+          .sub-menu {
+            width: 100%;
+            padding-left: 10px;
+
+            .menu-item {
+              display: block;
+              height: auto;
+
+              a {
+                width: auto;
+                line-height: 50px;
+              }
+            }
+            .sub-menu {
+              left: 0;
+              .menu-item-has-children {
+                &:hover {
+                  .sub-menu {
+                    display: none;
+                    position: relative;
+                    border: none;
+                    box-shadow: none;
+                  }
+                }
+                span.open-menu {
+                  &::after {
+                    transform: rotate(180deg);
+                  }
+                }
+                span.open-menu + .sub-menu {
+                  display: block;
+                  position: relative;
+                  border: none;
+                  box-shadow: none;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  &__social {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .menu-hamburger {
+    display: block;
+  }
+}

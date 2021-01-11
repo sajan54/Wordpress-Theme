@@ -1,0 +1,141 @@
+.header {
+  padding: 2.5rem 40px;
+  &__inner{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  }
+
+  &--grid {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  &--banner {
+    padding-left: 15px;
+
+    img {
+      height: 8rem;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__social {
+    display: grid;
+    place-items: center;
+    padding: 0;
+    font-size: 16px;
+  }
+
+  &__search.navbar__search {
+    border: none;
+  }
+
+  &__left,
+  &__right {
+    position: absolute;
+    display: flex;
+    align-items: center;
+  }
+
+  &__left {
+    left: 0;
+  }
+
+  &__right {
+    right: 0;
+  }
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  &--navbar {
+    justify-content: center;
+    display: none;
+
+    @media (min-width: 1024px) {
+      display: flex;
+    }
+  }
+
+  &--navbar.center {
+    justify-content: center;
+    display: flex;
+
+    @media (min-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &__custom {
+    text-transform: uppercase;
+    font-size: 6rem;
+    white-space: nowrap;
+    font-family: "Cinzel Decorative", cursive;
+    color: inherit;
+    line-height: 1.2;
+
+    &--navbar {
+      font-size: 4rem;
+    }
+  }
+
+  &__image {
+    a{
+      max-width: 330px;
+      display: inline-block;
+      img{
+        height: auto;
+        width: 100%;
+      }
+    }
+
+    &--navbar {
+      padding: 5px 0px;
+    }
+
+    &--fixed {
+      color: #000 !important;
+    }
+  }
+
+  &__text {
+    text-transform: capitalize;
+    font-size: 2rem;
+    white-space: nowrap;
+    color: $color-font;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .header {
+    &--grid {
+      flex-direction: column;
+    }
+
+    &--banner {
+      padding: 15px;
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    &--grid {
+      flex-direction: column;
+    }
+  }
+  .logo {
+    margin-bottom: 10px;
+    &--navbar {
+      margin: 0;
+    }
+  }
+}

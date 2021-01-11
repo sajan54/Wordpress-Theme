@@ -1,0 +1,58 @@
+.widget.home,
+.popular-post--home {
+  .widgettitle {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 0 0 25px;
+    letter-spacing: 3px;
+    display: inline-block;
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    text-transform: uppercase;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      border-bottom: 1px solid #d9d9d9;
+      width: 500px;
+      top: 50%;
+      margin: 0 15px;
+    }
+
+    &::after {
+      left: 100%;
+    }
+
+    &::before {
+      right: 100%;
+    }
+
+    @media (min-width: 768px) {
+      font-size: 18px;
+    }
+
+    @media (min-width: 1024px) {
+      font-size: 24px;
+
+      &::before,
+      &::after {
+        margin: 0 25px;
+      }
+    }
+  }
+}
+
+.widget.footer {
+  .widgettitle {
+    font-size: 16px;
+    font-weight: 600;
+    display: block;
+    padding-bottom: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    color: #fff;
+    text-align: left;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+  }
+}

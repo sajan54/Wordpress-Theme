@@ -1,0 +1,13 @@
+# ignore packaged files
+packaged/
+*.zip
+
+node_modules/
+dist/
+
+# track these files, if they exist
+!.gitignore
+!.editorconfig
+!README.md
+!CHANGELOG.md
+!composer.json
