@@ -224,3 +224,21 @@
     width: 1170px;
   }
 }
+
+//new css global change
+    //new changes css start
+    .post-list-dash__category--position{
+      position: relative;
+      margin-bottom: 25px;
+    }
+   
+    .post-list-dash__category--borderButtom::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      height: 1px;
+      width: 30px;
+      background-color: #888;
+    }
+    //end

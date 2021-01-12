@@ -3,11 +3,20 @@
   flex-direction: column;
   padding: 0 40px;
   border-top: 1px solid $color-border;
+  border-bottom: 1px solid $color-border;
+
   position: relative;
   z-index: 100;
   width: 100%;
   justify-content: center;
   transition: all 500ms;
+  &--faith{
+    border-top: 1px solid #f2f2f2;//css change
+    border-bottom: 1px solid #f2f2f2;//css change
+    a {
+      color: #757575!important;
+    }
+  }
 
   &--collapsed {
     .navbar__toggle {
@@ -68,9 +77,11 @@
     justify-content: center;
     padding-left: 10px;
     border-left: 1px solid #eaeaea;
-    font-size: 16px;
     cursor: pointer;
-    margin: 10px 0;
+    color: rgba(0, 0, 0, 0.8);
+    opacity: 0.6;
+    font-size: 13px;
+
 
     &--fixed {
       color: #000 !important;
@@ -119,6 +130,11 @@
     color: inherit;
     cursor: pointer;
     margin-left: 15px;
+    display: block;
+
+    @media (min-width:1024px){
+    display: none;
+    }
   }
 
   &__responsive-text {
@@ -131,6 +147,13 @@
     transition: opacity 100ms;
   }
 }
+//new css change
+span{
+  &.menu-dropdown-icon {
+    margin-left: 10px;
+  }
+}
+//new css change end
 
 .navigation {
   font-weight: 400;
@@ -334,10 +357,9 @@
   }
 }
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1024px) {//css change for new site
   .navbar {
     padding: 10px 40px;
-
     &__toggle {
       display: block;
     }
@@ -351,9 +373,9 @@
       }
     }
 
-    &__social {
-      display: none;
-    }
+    //&__social {
+    //  display: none;
+    //}
 
     &__search {
       border: none;

@@ -239,6 +239,11 @@ article.post-page {
       @media (min-width: 768px) {
         margin: 60px 20px;
       }
+      &--inner{
+        @media (min-width: 768px) {
+          margin: 0px;
+        }
+      }
 
       &__top {
         width: 100%;

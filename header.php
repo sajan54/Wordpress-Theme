@@ -45,7 +45,17 @@
         }
         ?>
 </head>
-<?php if(get_theme_mod('_themename_topbar_display_toggle', true)){ ?>
-    <?php get_template_part('template-parts/topbar'); ?>
-<?php } ?>
 <body>
+<?php if(get_theme_mod('_themename_topbar_display_toggle', true)){ ?>
+    <?php get_template_part('template-parts/topbar/topbar'); ?>
+<?php } ?>
+
+<?php if(get_theme_mod('_themename_header_display_toggle', true)){ ?>
+    <?php get_template_part('template-parts/header/header'); ?>
+<?php } ?>
+
+<?php get_template_part('template-parts/navbar/layout-1'); ?>
+
+
+
+

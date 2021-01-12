@@ -6,6 +6,9 @@
   .newsletter {
     position: relative;
     padding: 30px 35px;
+    &--background{
+      background: #ffecec;
+    }
 
     &__left {
       display: grid;
@@ -33,12 +36,19 @@
         font-size: 18px;
         font-weight: 600;
       }
+      p{
+        margin-bottom: 8px;
+        font-size: 18px;
+        color: #65645f;
+        line-height: 16px;
+      }
     }
 
     &__subheading {
       p {
         font-size: 14px;
         font-weight: 400;
+        color: #757575;
       }
     }
 
@@ -46,6 +56,7 @@
       display: flex;
       align-items: center;
       flex-direction: column;
+     
     }
 
     &__input {
@@ -53,7 +64,7 @@
       background: #fff;
       width: 100%;
       border: 1px solid $color-border;
-      border-radius: 3px;
+      border-radius: 0px;
 
       input[type="text"] {
         width: 100%;
@@ -73,6 +84,7 @@
     &__button {
       width: 100%;
       background: $color-hover;
+      background: #d2c3be;
       color: #fff;
       font-size: 14px;
       height: 40px;
@@ -80,7 +92,7 @@
       text-align: center;
       text-transform: uppercase;
       font-weight: 500;
-      border-radius: 3px;
+      border-radius: 0px;
       font-family: "Montserrat", sans-serif;
       letter-spacing: 1px;
       cursor: pointer;
@@ -277,13 +289,22 @@
       @media (min-width: 768px) {
         flex-direction: row;
       }
+     
     }
+   
 
     &__input {
       flex: 2;
       border-radius: 0px;
+      &--newsletter{
+        
+        @media (min-width: 768px) {
+          flex: none; 
+          margin-bottom: 15px;
+        }
+      }
     }
-
+  
     &__button {
       margin-top: 0px;
       flex: 1;
@@ -376,8 +397,10 @@
     &__action {
       @media (min-width: 1024px) {
         flex-direction: row;
+        
       }
     }
+    
 
     &__button {
       @media (min-width: 1024px) {
@@ -442,6 +465,11 @@
           font-size: 22px;
         }
       }
+      p{
+        @media (min-width: 768px) {
+          font-size: 20px;
+        }
+      }
     }
 
     &__subheading {
@@ -494,6 +522,7 @@
         display: inline-block;
       }
     }
+ 
   }
 
   .newsletter-parallax {

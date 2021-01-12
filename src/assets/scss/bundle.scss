@@ -1,6 +1,3 @@
-@import "slick";
-@import "slick-theme";
-
 @import "abstracts/mixins";
 @import "abstracts/variables";
 @import "abstracts/utilities";
@@ -15,6 +12,7 @@
 @import "layouts/navbar";
 @import "layouts/footer";
 @import "layouts/sidebar";
+
 
 @import "components/social-icons";
 @import "components/search";
