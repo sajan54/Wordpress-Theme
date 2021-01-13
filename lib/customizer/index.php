@@ -33,15 +33,9 @@ function _themename_register_customization_options($wp_customize){
         'priority' => 7,
     ));
 
-    $wp_customize->add_panel('_themename_typography_panel', array(
-        'title'=>esc_html__( 'RB Footer', '_themename'),
-        'description' => esc_html__('You can change your typography settings here.', '_themename'),
-        'priority' => 8,
-    ));
-
     include 'topbar.php';
-    include 'footer.php';
     include 'color/index.php';
     include 'typography/index.php';
     include 'header.php';
+    include 'footer.php';
 }
