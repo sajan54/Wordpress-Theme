@@ -36,4 +36,6 @@ function _themename_register_customization_options($wp_customize){
     include 'topbar.php';
     include 'color/index.php';
     include 'typography/index.php';
+    include 'header.php';
+    include 'footer.php';
 }

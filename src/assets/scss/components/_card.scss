@@ -1,7 +1,20 @@
+%btn__primary{
+  padding: 12px 30px;
+  background: #ffecec;
+  color: #9e9e9c;
+  font-weight: 400;
+  font-size: 12px;
+  display: block;
+}
 .card-full-width {
   &__block {
     overflow: hidden;
   }
+  &__btn{
+    @extend %btn__primary;
+
+  }
+ 
 
   &__image {
     &--block {
@@ -13,6 +26,9 @@
 
       @media (min-width: 768px) {
         height: 520px;
+      }
+      @media (min-width: 1024px) { //css new changes
+        height: 720px;
       }
     }
   }
@@ -86,9 +102,10 @@
       font-size: 24px;
       font-family: "Lora", sans-serif;
       font-weight: 700;
-      text-transform: uppercase;
+      //text-transform: uppercase;
       display: -webkit-box;
       transition: all 500ms;
+      
 
       @media (min-width: 768px) {
         font-size: 30px;
@@ -96,6 +113,13 @@
 
       @media (min-width: 1024px) {
         display: inline;
+      }
+      &--font{
+        font-weight: 500!important;
+        font-size: 22px;
+        @media (min-width: 768px) {
+          font-size: 30px;
+        }
       }
     }
   }

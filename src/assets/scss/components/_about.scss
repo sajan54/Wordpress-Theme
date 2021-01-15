@@ -4,7 +4,6 @@
   .about-parallax,
   .about-social {
     font-family: "Montserrat", sans-serif;
-
     &__image {
       width: 300px;
       margin: 0 auto;
@@ -16,11 +15,14 @@
     }
 
     &__name {
-      font-size: 16px;
-      text-transform: uppercase;
+      font-size: 18px;
       letter-spacing: 1px;
       text-align: center;
       padding-top: 12px;
+      line-height: 33px;
+      color: #65645f;
+      font-family: "Lora", sans-serif;
+      font-weight: 500;
     }
 
     &__label {
@@ -49,6 +51,15 @@
       text-transform: capitalize;
       margin-top: 24px;
       text-align: center;
+    }
+    &__details {
+      &--icon{ //new css changes
+        width: 70%;
+        margin: 16px auto 0px;
+        position: relative;
+        font-size: 13px;
+        justify-content: center;
+      }
     }
   }
   .about-grid {

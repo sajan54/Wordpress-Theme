@@ -801,6 +801,7 @@
     flex-direction: column;
     @media (min-width: 768px) {
       flex-direction: row;
+      align-items: unset;//css change
     }
   }
 
@@ -852,18 +853,30 @@
     font-family: "Mukta", sans-serif;
     font-size: 30px;
     position: relative;
-    font-weight: 700;
     padding-bottom: 10px;
-    &::after {
-      content: "";
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      height: 2px;
-      width: 30px;
-      background-color: #000;
-    }
+    font-size: 24px;
+    line-height: 33px;
+    color: #65645f;
+    font-family: "Lora", sans-serif;
+    //&::after {
+     // content: "";
+     // position: absolute;
+     // bottom: 0;
+    //  left: 0;
+    //  height: 2px;
+    //  width: 30px;
+    //  background-color: #000;
+    //}
+
   }
+  &__subtitle {
+    font-size: 11px;
+    color: #757575;
+    line-height: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 2.5px;
+}
 
   &__desc {
     margin-top: 25px;

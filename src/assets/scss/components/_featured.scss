@@ -927,6 +927,11 @@
     }
   }
 }
+.featured-list {
+  &--product{ //new css change
+    display: flex;
+  }
+}
 
 .widget__themename_multipost_widget.home {
   .featured-masonry-wrap {
@@ -1071,6 +1076,9 @@
   .featured-list {
     position: relative;
     overflow: hidden;
+    &--product{ //new css change
+      display: flex;
+    }
 
     a {
       display: block;

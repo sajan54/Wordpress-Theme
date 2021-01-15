@@ -17,8 +17,11 @@
     }
 
     &--nav {
-      margin: 0 5px;
+      margin: 0 10px;
       font-size: inherit;
+      color: rgba(0, 0, 0, 0.8);
+      opacity: 0.6;
+      font-size: 13px;
     }
 
     &--post {

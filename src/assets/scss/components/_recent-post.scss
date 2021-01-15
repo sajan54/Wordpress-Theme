@@ -15,16 +15,37 @@
 
         .image {
           width: 100px;
-
           img {
             height: 80px;
             width: 95px;
           }
+          &--width{
+            width: 120px;
+            img {
+              height: 85px;
+              width: 115px;
+            }
+          }
+          &--product{
+            width: 150px;
+            img {
+              height: 125px;
+              width: 145px;
+            }
+          }
+
+         
 
           &--leaf {
             img {
               border-top-right-radius: 30%;
               border-bottom-left-radius: 30%;
+            }
+          }
+          &--noradious{
+            img{
+              border-top-right-radius: 0%;
+              border-bottom-left-radius: 0%;
             }
           }
 
@@ -48,9 +69,18 @@
         }
 
         a {
-          display: block;
-          font-size: 14px;
-          font-family: "Raleway", sans-serif;
+          //display: block;
+          //font-size: 14px;
+          //font-family: "Raleway", sans-serif;
+          //letter-spacing: 1px;
+          //font-weight: 500;
+          //text-align: left;
+          //display: -webkit-box;
+          //-webkit-line-clamp: 2;
+          //-webkit-box-orient: vertical;
+          //overflow: hidden;
+          //text-transform: uppercase;
+
           letter-spacing: 1px;
           font-weight: 500;
           text-align: left;
@@ -58,7 +88,16 @@
           -webkit-line-clamp: 2;
           -webkit-box-orient: vertical;
           overflow: hidden;
-          text-transform: uppercase;
+          font-size: 16px;
+          color: #65645f;
+          line-height: 24px;
+          font-family: Lora,serif;
+          font-weight: 400;
+          margin-bottom: 10px;
+          text-decoration: none;
+          display: block;
+          transition: color .25s ease-in-out;
+          -webkit-transition: color .25s ease-in-out;
         }
 
         span {
