@@ -6,3 +6,4 @@ $wp_customize->add_section('_themename_typo_topbar_section', array(
 ));
 
 include 'topbar.php';
+include 'slider.php';
