@@ -1,4 +1,3 @@
-<?php if (!rb_fs()->is_plan__premium_only('pro') ){ ?>
 <div class="u-outline-none">
     <div class="slider__content slider__content--base">
         <div class="slider__text slider__text--base slider__text--dark slider__text--full">
@@ -56,4 +55,3 @@
         </div>
     </div>
 </div>
-<?php } ?>
