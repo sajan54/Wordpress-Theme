@@ -1,5 +1,5 @@
 import $ from 'jquery';
-import './components/slider';
+import './components/slider.min.js';
 
 $("#canvas").click((e) => {
     $(".canvas").addClass("canvas--open");
