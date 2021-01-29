@@ -149,7 +149,7 @@ $wp_customize->add_control('_themename_footer_instagram_link', array(
     'type' => 'text',
     'section' => '_themename_footer_section', 
     'label' => __( 'Instagram Link' ),
-    'priority'=> 7,
+    'priority'=> 9,
 ));
 
 $wp_customize->add_setting('_themename_footer_twitter_link', array(
@@ -161,7 +161,7 @@ $wp_customize->add_control('_themename_footer_twitter_link', array(
     'type' => 'text',
     'section' => '_themename_footer_section', 
     'label' => __( 'Twitter Link' ),
-    'priority'=> 8,
+    'priority'=> 10,
 
 ));
 
@@ -174,7 +174,7 @@ $wp_customize->add_control('_themename_footer_facebook_link', array(
     'type' => 'text',
     'section' => '_themename_footer_section', 
     'label' => __( 'Facebook Link' ),
-    'priority'=> 9,
+    'priority'=> 11,
 ));
 
 $wp_customize->add_setting( '_themename_footer_social_icon_bg_color' , array(
@@ -185,6 +185,6 @@ $wp_customize->add_setting( '_themename_footer_social_icon_bg_color' , array(
 $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, '_themename_footer_social_icon_bg_color', array(
     'label'        => esc_html__('Social Icon Color', '_themename'),
     'section'    => '_themename_footer_section',
-    'priority'  => 10,
+    'priority'  => 12,
     'settings'   => '_themename_footer_social_icon_bg_color',
 ) ) );

@@ -44,22 +44,8 @@
         <?php
         }
         ?>
-</head>
-<body>
-<main>
-<?php if(get_theme_mod('_themename_topbar_display_toggle', true)){ ?>
-    <?php get_template_part('template-parts/topbar/wrapper'); ?>
-<?php } ?>
-
-<?php if(get_theme_mod('_themename_header_display_toggle', true)){ ?>
-    <?php get_template_part('template-parts/header/wrapper'); ?>
-<?php } ?>
-
-<?php get_template_part('template-parts/navbar/layout-1'); ?>
-</main>
-<main>
-<style>
-<?php if(!get_theme_mod('_themename_slider_category_seperator_display', true)){ ?>
+    <style>
+    <?php if(!get_theme_mod('_themename_slider_category_seperator_display', true)){ ?>
         .slider__category div:not(:last-child)::after{
             content: "";
         }
@@ -179,5 +165,51 @@
         .slider__prev, .slider__next{
             color: <?php echo esc_attr(get_theme_mod('_themename_slider_pagination_color', '#ffffff'));?>;
         }
+        <?php $slider_option = get_theme_mod('_themename_slider_option', 'full-width'); ?>
+        <?php if($slider_option == 'center'){ ?>
+            .slider__image{
+                width: 70vh;
+                height: 70vh;
+            }
+            .slider__prev{
+                left: 17%;
+            }
+            .slider__next{
+                right: 17%;
+            }
+            @media only screen and (max-width: 600px){
+                .slider__text {
+                    width: 90% ;
+                }
+                .slider__about__child{
+                    padding: 5px;
+                }
+                .slider__image{
+                    width: 100vh !important;
+                    margin: 0px;
+                }
+                .slider__prev{
+                    left: 8%;
+                }
+                .slider__next{
+                    right: 8%;
+                }  
+            }
 
-</style>
+        <?php } ?>
+
+        </style>
+</head>
+<body>
+<main>
+<?php if(get_theme_mod('_themename_topbar_display_toggle', true)){ ?>
+    <?php get_template_part('template-parts/topbar/wrapper'); ?>
+<?php } ?>
+
+<?php if(get_theme_mod('_themename_header_display_toggle', true)){ ?>
+    <?php get_template_part('template-parts/header/wrapper'); ?>
+<?php } ?>
+
+<?php get_template_part('template-parts/navbar/layout-1'); ?>
+
+</main><main>

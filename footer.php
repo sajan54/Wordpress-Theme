@@ -3,7 +3,7 @@
     <?php get_template_part('template-parts/footer/wrapper'); ?>
 <?php } ?>
 <?php wp_footer(); ?>
-
+</main>
 <script>
     <?php 
 if(get_theme_mod('_themename_slider_or_banner_display_toggle', true) 

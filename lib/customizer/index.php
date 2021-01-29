@@ -47,4 +47,5 @@ function _themename_register_customization_options($wp_customize){
     include 'header.php';
     include 'footer.php';
     include 'slider-content.php';
+    include 'newsletter.php';
 }
