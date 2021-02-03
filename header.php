@@ -212,4 +212,4 @@
 
 <?php get_template_part('template-parts/navbar/layout-1'); ?>
 
-</main><main>
+</main>

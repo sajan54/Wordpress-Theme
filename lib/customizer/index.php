@@ -36,16 +36,15 @@ function _themename_register_customization_options($wp_customize){
     $wp_customize->add_panel('_themename_slider_banner_panel', array(
         'title'=>esc_html__( 'Slider & Banner', '_themename'),
         'description' => esc_html__('You can sider and banner settings here.', '_themename'),
-        'priority' => 6,
+        'priority' => 8,
     ));
 
     include 'topbar.php';
-    include 'color/index.php';
-    include 'typography/index.php';
-    include 'slider-content.php';
-    include 'slider.php';
     include 'header.php';
-    include 'footer.php';
+    include 'slider.php';
     include 'slider-content.php';
     include 'newsletter.php';
+    include 'footer.php';
+    include 'color/index.php';
+    include 'typography/index.php';
 }
